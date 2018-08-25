@@ -18,13 +18,10 @@ namespace SSAutomation.EmailComponent
 {
     public class EmailPoster
     {
-        //private static readonly string smtpServer = "smtp.gmail.com";
-        private static readonly string smtpServer = System.Configuration.ConfigurationManager.AppSettings["smtp"]; //"smtp.office365.com";
+        private static readonly string smtpServer = System.Configuration.ConfigurationManager.AppSettings["smtp"];
         private static readonly int port = 587;
-        //private static readonly string account = "CCSGNorconsult@gmail.com";
-        private static readonly string account = System.Configuration.ConfigurationManager.AppSettings["sender"]; //"Finance@ntww.com";
-        //private static readonly string password = "CC$AGN0rcon$ult";
-        private static readonly string password = System.Configuration.ConfigurationManager.AppSettings["password"]; //"finapp@12345";
+        private static readonly string account = System.Configuration.ConfigurationManager.AppSettings["sender"];
+        private static readonly string password = System.Configuration.ConfigurationManager.AppSettings["password"];
         private static readonly bool enableSSL = true;
         private static readonly List<EmailError> errors = new List<EmailError>();
         private static readonly List<string> successEmails = new List<string>();
