@@ -1,0 +1,27 @@
+﻿<Controls:MetroWindow xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      x:Class="SSAutomation.ExcelUI.MainWindow"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SSAutomation.ExcelUI"
+        mc:Ignorable="d"
+        Title="NTSA - Salary slips" 
+        Height="300"
+        Width="700"
+        WindowStartupLocation="CenterScreen">
+
+    <av:Grid>
+        <av:GroupBox Header="Process Employees Data" HorizontalAlignment="Left" Height="249" Margin="10,10,0,0" VerticalAlignment="Top" Width="672">
+            <av:Grid>
+                <av:TextBox Name="TxtFilePath" Height="26" VerticalAlignment="Top" Margin="134,19,213,0" />
+                <av:Button Name="BtnBrowse" Height="28" Content="Browse .." Margin="454,17,87,169" Click="BtnBrowse_Click"  />
+                <av:Label Content="Please Select A File : " HorizontalAlignment="Left" Margin="10,19,0,0" VerticalAlignment="Top" Width="124"/>
+                <av:ProgressBar Name="ProgressBar1" HorizontalAlignment="Left" Height="22" Margin="10,157,0,0" VerticalAlignment="Top" Width="642" Visibility="Hidden" />
+                <av:Button Name="BtnStartProcess" Content="Start Operation" IsEnabled="False" HorizontalAlignment="Left" Height="39" Margin="245,64,0,0" VerticalAlignment="Top" Width="162" Click="Button_Click"/>
+            </av:Grid>
+        </av:GroupBox>
+    </av:Grid>
+
+
+</Controls:MetroWindow>

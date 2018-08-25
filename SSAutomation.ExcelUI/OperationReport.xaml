@@ -1,0 +1,48 @@
+﻿<Controls:MetroWindow xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        x:Class="SSAutomation.ExcelUI.OperationReport"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SSAutomation.ExcelUI"
+        mc:Ignorable="d"
+        Title="NTSA - Processing output report" 
+        Height="600"
+        Width="800"
+        WindowStartupLocation="CenterScreen">
+    <av:Grid>
+        <av:Grid.ColumnDefinitions>
+            <av:ColumnDefinition Width="*"></av:ColumnDefinition>
+        </av:Grid.ColumnDefinitions>
+        <av:Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </av:Grid.RowDefinitions>
+        <av:StackPanel Orientation="Horizontal" Margin="0,0,0,0" Grid.Column="0" Grid.Row="0">
+            <av:GroupBox Header="Overall Results" Width="265">
+                <av:Grid>
+                    <Label Content="Total : " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="69" FontSize="18" Foreground="#FF1A398B"/>
+                    <Label Name="lblTotal" HorizontalAlignment="Left" Margin="80,10,0,0" VerticalAlignment="Top" Width="69" FontSize="18" Foreground="#FF1A398B"/>
+                    <Label Content="Success : " HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Width="86" FontSize="18" Foreground="#FF2A7A2A"/>
+                    <Label Name="lblSuccess" HorizontalAlignment="Left" Margin="80,59,0,0" VerticalAlignment="Top" Width="86" FontSize="18" Foreground="#FF2A7A2A"/>
+                    <Label Content="Failed : " HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top" Width="86" FontSize="18" Foreground="#FFE21414"/>
+                    <Label Name="lblFailed" HorizontalAlignment="Left" Margin="80,111,0,0" VerticalAlignment="Top" Width="86" FontSize="18" Foreground="#FFE21414"/>
+                </av:Grid>
+            </av:GroupBox>
+            <av:GroupBox Header="Success Employees" Width="265">
+                <DataGrid Name="GridSuccessEmps" HorizontalAlignment="Left" Height="156" VerticalAlignment="Top" Width="255" Margin="0,0,0,0">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </av:GroupBox>
+            <av:GroupBox Header="Failed Employees" Width="265">
+                <DataGrid Name="GridFailedEmps" HorizontalAlignment="Left" Height="156" VerticalAlignment="Top" Width="255" Margin="0,0,0,0"/>
+            </av:GroupBox>
+        </av:StackPanel>
+        <av:GroupBox Header="Overall Breakdown" Grid.Column="0" Grid.Row="1" Margin="0,0">
+            <DataGrid Name="GridBreakdown" HorizontalAlignment="Left" Height="345" VerticalAlignment="Top" Width="782" Margin="0,0,0,0"/>
+        </av:GroupBox>
+    </av:Grid>
+</Controls:MetroWindow>

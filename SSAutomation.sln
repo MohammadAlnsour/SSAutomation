@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSAutomation.ExcelUI", "SSAutomation.ExcelUI\SSAutomation.ExcelUI.csproj", "{0B4F9B3B-A109-4329-982C-CA320FE33A7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSAutomation.ExcelParser", "SSAutomation.ExcelParser\SSAutomation.ExcelParser.csproj", "{5AB4FC0C-3956-4946-B069-B988F074D60C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSAutomation.PdfGenerator", "SSAutomation.PdfGenerator\SSAutomation.PdfGenerator.csproj", "{7086B0A3-F1B1-4C4B-87DA-CF9AD823B56D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSAutomation.Core", "SSAutomation.Core\SSAutomation.Core.csproj", "{0F6CD06E-455B-4D99-A160-418386435C8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSAutomation.EmailComponent", "SSAutomation.EmailComponent\SSAutomation.EmailComponent.csproj", "{B3ADA066-77C6-4CC5-8BCC-6ECCF8E6416A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B4F9B3B-A109-4329-982C-CA320FE33A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B4F9B3B-A109-4329-982C-CA320FE33A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B4F9B3B-A109-4329-982C-CA320FE33A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B4F9B3B-A109-4329-982C-CA320FE33A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB4FC0C-3956-4946-B069-B988F074D60C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB4FC0C-3956-4946-B069-B988F074D60C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB4FC0C-3956-4946-B069-B988F074D60C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB4FC0C-3956-4946-B069-B988F074D60C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7086B0A3-F1B1-4C4B-87DA-CF9AD823B56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7086B0A3-F1B1-4C4B-87DA-CF9AD823B56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7086B0A3-F1B1-4C4B-87DA-CF9AD823B56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7086B0A3-F1B1-4C4B-87DA-CF9AD823B56D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F6CD06E-455B-4D99-A160-418386435C8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F6CD06E-455B-4D99-A160-418386435C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F6CD06E-455B-4D99-A160-418386435C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F6CD06E-455B-4D99-A160-418386435C8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3ADA066-77C6-4CC5-8BCC-6ECCF8E6416A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3ADA066-77C6-4CC5-8BCC-6ECCF8E6416A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3ADA066-77C6-4CC5-8BCC-6ECCF8E6416A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3ADA066-77C6-4CC5-8BCC-6ECCF8E6416A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {797BF1AA-CD6C-41B6-92C8-685EE410951D}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mohammadalnsour.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SSAutomation.Core\\SSAutomation.Core.csproj
+		SccProjectName1 = SSAutomation.Core
+		SccLocalPath1 = SSAutomation.Core
+		SccProjectUniqueName2 = SSAutomation.EmailComponent\\SSAutomation.EmailComponent.csproj
+		SccProjectName2 = SSAutomation.EmailComponent
+		SccLocalPath2 = SSAutomation.EmailComponent
+		SccProjectUniqueName3 = SSAutomation.ExcelParser\\SSAutomation.ExcelParser.csproj
+		SccProjectName3 = SSAutomation.ExcelParser
+		SccLocalPath3 = SSAutomation.ExcelParser
+		SccProjectUniqueName4 = SSAutomation.ExcelUI\\SSAutomation.ExcelUI.csproj
+		SccProjectName4 = SSAutomation.ExcelUI
+		SccLocalPath4 = SSAutomation.ExcelUI
+		SccProjectUniqueName5 = SSAutomation.PdfGenerator\\SSAutomation.PdfGenerator.csproj
+		SccProjectName5 = SSAutomation.PdfGenerator
+		SccLocalPath5 = SSAutomation.PdfGenerator
+	EndGlobalSection
+EndGlobal
